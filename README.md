@@ -15,13 +15,13 @@ This repository contains an end-to-end deep learning pipeline designed to predic
 
 1. **Step 1:** We defined churn as the target variable (Binary Classification) to help the sales team prioritize retention efforts.
 
-2. **Step 2 (Data):** \* Cleaned the Kaggle Telco dataset, handling "empty string" errors in `TotalCharges`.
+2. **Step 2 (Data):** Cleaned the Kaggle Telco dataset, handling "empty string" errors in `TotalCharges`.
 
 - Encoded categorical features using `LabelEncoder`.
 
 - Applied `StandardScaler` to ensure numerical features (Tenure, Charges) had a mean of 0 and variance of 1.
 
-3. **Step 3 (Architecture):** \* Designed a 3-layer MLP architecture (`64 -> 32 -> 1`).
+3. **Step 3 (Architecture):** Designed a 3-layer MLP architecture (`64 -> 32 -> 1`).
 
 - Implemented `BatchNorm1d` for training stability and `Dropout` to prevent overfitting.
 
@@ -33,7 +33,7 @@ This repository contains an end-to-end deep learning pipeline designed to predic
 
 5. **Step 5:** Monitored accuracy across epochs, starting at **78.54%** and peaking at **79.74%**.
 
-6. **Step 6:** \* Developed an `inference.py` script for individual customer scoring.
+6. **Step 6:** Developed an `inference.py` script for individual customer scoring.
 
 - Deployed a **Streamlit** dashboard for non-technical stakeholders to perform "What-If" analysis.
 
@@ -105,6 +105,7 @@ python main.py
 streamlit run app.py
 
 ```
+
 
 
 
