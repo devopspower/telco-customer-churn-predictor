@@ -79,7 +79,13 @@ The following visualizations provide context for why the model makes specific pr
 ## 💻 How to Run
 
 1. **Clone the repo** and navigate to the directory.
-2. **Install dependencies:**
+
+```bash
+git clone https://github.com/devopspower/telco-customer-churn-predictor.git
+
+```
+
+3. **Install dependencies:**
 
 ```bash
 pip install -r requirements.txt
@@ -99,5 +105,6 @@ python main.py
 streamlit run app.py
 
 ```
+
 
 
